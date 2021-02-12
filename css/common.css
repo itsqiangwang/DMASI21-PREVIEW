@@ -1,0 +1,370 @@
+/*
+Common
+*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+    scroll-behavior: smooth;
+    cursor: default;
+    /* background-color: white; */
+    line-height: 1.2;
+    letter-spacing: 0.25pt;
+    animation: pageLoad 1s ease-in;
+    scrollbar-width: none;
+}
+
+@keyframes pageLoad{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.shadows{
+    transition: all 0.5s ease;
+}
+
+.shadows:hover{
+    color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+hr{
+    margin: 0 20pt;
+    height: 1px;
+    outline: none;
+    border: none;
+    color: black;
+    background-color: black;
+}
+
+.hr-thick{
+    height: 3px;
+}
+
+a,
+.btn{
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    border-bottom: 1px solid transparent;
+    filter: blur(1pt);
+    transition: 0.3s;
+}
+
+a:hover,
+.btn:hover{
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    filter: blur(0.1pt);
+}
+
+h1,h2,h3,p,figure{
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+ul,
+ol{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    padding-left: 16pt;
+    text-indent: -16pt;
+}
+
+/*
+Header
+*/
+
+header{
+    padding: 20pt;
+}
+
+/*
+Page intro
+*/
+
+.intro{
+    padding: 20pt;
+}
+
+.intro .twenty-four-pt{
+    padding-top: 20pt;
+}
+
+/*
+Font size + Column padding
+*/
+
+.twelve-pt{
+    font-size: 12pt;
+}
+
+.eighteen-pt{
+    font-size: 18pt;
+}
+
+.twenty-four-pt{
+    font-size: 24pt;
+}
+
+.thirty-six-pt{
+    font-size: 36pt;
+}
+
+.left-column{
+    width: 50vw;
+    padding-right: 10pt;
+}
+
+.right-column{
+    width: 50vw;
+    padding-left: 10pt;
+}
+
+.two-col-section{
+    padding: 20pt;
+    display: flex;
+}
+
+/*
+Menu btn + Menu content
+*/
+.menu-btn{
+    position: fixed;
+    top: 20pt;
+    right: 20pt;
+    z-index: 999;
+}
+
+main,
+footer{
+    position: relative;
+    transition: 1s;
+}
+
+.menu{
+    position: fixed;
+    width: 100vw;
+    padding: 20pt;
+    height: 100vh;
+    opacity: 0;
+    transition: 1s;
+}
+
+.menu hr{
+    margin: 20pt 0;
+    height: 2pt;
+    color: black;
+    background-color: black;
+}
+
+.menu .hr-show-on-mobile{
+    display: none;
+}
+
+.menu .close-btn{
+    position: fixed;
+    top: 20pt;
+    right: 20pt;
+    z-index: 999;
+}
+
+.menu .register{
+    width: 100%;
+    position: fixed;
+    bottom: 20pt;
+    left: 20pt;
+}
+
+.menu .register-caption{
+    padding-top: 10pt;
+    margin-right: 40pt;
+}
+
+/*
+Page top navigation
+*/
+.top-nav{
+    padding: 20pt;
+}
+
+.top-nav a{
+    display: inline-block;
+    padding-left: 20pt;
+    text-indent: -20pt;
+}
+
+/* .top-nav a{
+    color: deeppink;
+} */
+
+/*
+Page bottom navigation
+*/
+.btm-nav{
+    padding: 20pt;
+}
+
+.btm-nav a{
+    display: inline-block;
+    padding-left: 20pt;
+    text-indent: -20pt;
+}
+
+/*
+Contact
+*/
+.contact{
+    padding: 20pt;
+}
+
+.contact h1{
+    padding-bottom: 20pt;
+}
+
+/*
+Footer
+*/
+footer{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20pt;
+}
+
+footer>div{
+    width: 50%;
+}
+
+footer .back-to-top{
+    text-align: right;
+}
+
+/*
+mobile view
+*/
+@media only screen and (max-width:480px) { 
+    .menu-btn{
+        font-size: 24pt !important;
+    }
+
+    .menu .close-btn{
+        position: relative;
+        display: inline-block;
+        top: 0pt;
+        right: 0pt;
+        z-index: 1;
+        font-size: 24pt;
+    }
+
+    .menu .hr-show-on-mobile{
+        display: block;
+    }
+
+    .top-nav{
+        font-size: 18pt !important;
+    }
+
+    .two-col-section{
+        flex-wrap: wrap;
+    }
+
+    .left-column{
+        width: 100vw !important;
+        padding: 0;
+    }
+
+    .right-column{
+        width: 100vw !important;
+        padding: 20pt 0 0 0;
+    }
+
+    .eighteen-pt{
+        font-size: 12pt;
+    }
+    
+    .twenty-four-pt{
+        font-size: 18pt;
+    }
+    
+    .thirty-six-pt{
+        font-size: 24pt;
+    }
+
+    .domain-container{
+        flex-wrap: wrap-reverse;
+    }
+
+    .domain-student-work{
+        width: 100vw;
+        padding: 20pt 0 0 0;
+    }
+
+    .domain-description{
+        width: 100vw;
+        padding: 0;
+    }
+
+    #scholarships .scholarship-info{
+        padding-left: 14pt !important;
+    }
+
+    .menu a,
+    .menu .current-page{
+        font-size: 24pt;
+        display: inline-block;
+        padding-left: 20pt;
+        text-indent: -20pt;
+    }
+
+    .menu .current-page{
+        display: block;
+    }
+}
+
+/*
+tablet view
+*/
+@media only screen and (min-width: 481px) and (max-width:768px) {
+    .two-col-section{
+        flex-wrap: wrap;
+    }
+
+    .left-column{
+        width: 100vw !important;
+        padding: 0;
+    }
+
+    .right-column{
+        width: 100vw !important;
+        padding: 20pt 0 0 0;
+    }
+
+    .domain-container{
+        flex-wrap: wrap-reverse;
+    }
+
+    .domain-student-work{
+        width: 100vw;
+        padding: 20pt 0 0 0;
+    }
+
+    .domain-description{
+        width: 100vw;
+        padding: 0;
+    }
+}

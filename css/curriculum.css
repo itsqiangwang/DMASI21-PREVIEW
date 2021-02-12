@@ -1,0 +1,91 @@
+/*
+Domains section
+*/
+.domains{
+    padding: 20pt;
+}
+
+.domain-container{
+    display: flex;
+    padding-top: 20pt;
+}
+
+.domain-container .domain-student-work{
+    width: 50vw;
+    height: 50vh;
+}
+
+.domain-container .student-work-scroller::-webkit-scrollbar{
+    display: block;
+}
+
+.domain-container .student-work-scroller::-webkit-scrollbar-thumb{
+    background-color: lightgrey;
+}
+
+.domain-container .student-work-scroller{
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: block;
+}
+
+.domain-container .student-work-scroller figure{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.domain-container .student-work-scroller figure .student-work{
+    background-color: black;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20pt;
+}
+
+.domain-container .student-work-scroller figure img{
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.domain-container .student-work-scroller figure figcaption{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.domain-container .domain-description div{
+    padding-top: 10pt;
+}
+
+.domains .domain-outro{
+    padding-top: 20pt;
+}
+
+/*
+Materials + Supplies section
+*/
+
+.materials-supplies ul .computer-specification{
+    text-indent: -11pt;
+    padding-left: 11pt;
+}
+
+/*
+Software section
+*/
+
+.software .text:nth-of-type(2){
+    padding-top: 20pt;
+}

@@ -1,0 +1,18 @@
+/*
+Scholarships section
+*/
+
+#scholarships ol{
+    padding: 20pt 15pt;
+    margin: 0;
+    padding-left: 0pt;
+    text-indent: 0pt;
+}
+
+#scholarships li:nth-of-type(1){
+    padding-bottom: 20pt !important;
+}
+
+#scholarships .scholarship-info{
+    padding-left: 21pt;
+}
