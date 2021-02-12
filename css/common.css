@@ -168,9 +168,11 @@ footer{
 
 .menu hr{
     margin: 20pt 0;
-    height: 2pt;
     color: black;
     background-color: black;
+    height: 3px;
+    outline: none;
+    border: none;
 }
 
 .menu .hr-show-on-mobile{
