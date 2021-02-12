@@ -60,7 +60,7 @@ a,
     color: black;
     font-style: italic;
     border-bottom: 1px solid transparent;
-    filter: blur(1pt);
+    filter: blur(1px);
     transition: 0.3s;
 }
 
@@ -68,7 +68,7 @@ a:hover,
 .btn:hover{
     cursor: pointer;
     border-bottom: 1px solid black;
-    filter: blur(0.1pt);
+    filter: blur(0.1px);
 }
 
 h1,h2,h3,p,figure{
