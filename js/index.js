@@ -85,6 +85,23 @@ $(function () {
                 this.style['-moz-text-shadow'] = shadowColor;
             }
 
+            shadowApply[i].ontouchstart = function (e) {
+                // e.preventDefault();
+                let RGB = ['red', 'green', 'blue'];
+                let randomIndex = Math.floor(Math.random() * 3);
+
+                //random RGB colors
+                // let shadowColor = '0px 0px 10px ' + RGB[randomIndex]; + ')';
+
+                //random ALL colors
+                let color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+                let shadowColor = '0px 0px 10px ' + color;
+
+                this.style['text-shadow'] = shadowColor;
+                this.style['-webkit-text-shadow'] = shadowColor;
+                this.style['-moz-text-shadow'] = shadowColor;
+            }
+
             shadowApply[i].ontouchmove = function (e) {
                 // e.preventDefault();
                 let RGB = ['red', 'green', 'blue'];
