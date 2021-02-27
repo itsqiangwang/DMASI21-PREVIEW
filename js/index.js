@@ -72,6 +72,14 @@ $(function () {
     });
 });
 
+// touchscreen hover
+$(document).ready(function() {
+    $('.shadows').on('touchstart touchend', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('hover_effect');
+    });
+});
+
 // landing section background color
 let r = Math.floor(Math.random() * 128) + 128;
 let g = Math.floor(Math.random() * 128) + 128;

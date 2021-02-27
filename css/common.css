@@ -37,7 +37,7 @@ body {
 } */
 
 .shadows:hover,
-.shadows .hover_effect {
+.shadows.hover_effect {
     color: rgba(0, 0, 0, 0);
 }
 
