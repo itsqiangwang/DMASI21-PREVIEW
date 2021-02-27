@@ -75,7 +75,7 @@ $(function () {
 // touchscreen hover
 $(document).ready(function() {
     $('.shadows').on('touchstart touchend', function(e) {
-        e.preventDefault();
+        // e.preventDefault();
         $(this).toggleClass('hover_effect');
     });
 });
