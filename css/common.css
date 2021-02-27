@@ -337,6 +337,10 @@ mobile view
     .menu .current-page{
         display: block;
     }
+
+    .shadows:hover{
+        color: rgba(0, 0, 0, 1);
+    }
 }
 
 /*
@@ -369,5 +373,9 @@ tablet view
     .domain-description{
         width: 100vw;
         padding: 0;
+    }
+
+    .shadows:hover{
+        color: rgba(0, 0, 0, 1);
     }
 }
