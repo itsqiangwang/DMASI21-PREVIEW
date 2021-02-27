@@ -86,7 +86,7 @@ $(function () {
             }
 
             shadowApply[i].ontouchmove = function (e) {
-                e.preventDefault();
+                // e.preventDefault();
                 let RGB = ['red', 'green', 'blue'];
                 let randomIndex = Math.floor(Math.random() * 3);
 
