@@ -59,7 +59,7 @@ $(function () {
 
                 //random RGB colors
                 // let shadowColor = '0px 0px 10px ' + RGB[randomIndex]; + ')';
-                
+
                 //random ALL colors
                 let color = '#' + Math.floor(Math.random() * 16777215).toString(16);
                 let shadowColor = '0px 0px 10px ' + color;
@@ -69,19 +69,22 @@ $(function () {
                 this.style['-moz-text-shadow'] = shadowColor;
             }
         }
+
+        // touchscreen hover
+        $(document).ready(function () {
+            $('.shadows').on('touchstart touchend', function (e) {
+                // e.preventDefault();
+                $(this).toggleClass('hover_effect');
+            });
+        });
+        
     });
 });
 
-// touchscreen hover
-$(document).ready(function() {
-    $('.shadows').on('touchstart touchend', function(e) {
-        // e.preventDefault();
-        $(this).toggleClass('hover_effect');
-    });
-});
+
 
 // landing section background color
 let r = Math.floor(Math.random() * 128) + 128;
 let g = Math.floor(Math.random() * 128) + 128;
 let b = Math.floor(Math.random() * 128) + 128;
-document.getElementById('landing').style = 'background-color: rgb(' + r + ',' + g + ',' + b +')';
+document.getElementById('landing').style = 'background-color: rgb(' + r + ',' + g + ',' + b + ')';
