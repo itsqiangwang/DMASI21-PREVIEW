@@ -32,12 +32,7 @@ body {
     -webkit-touch-callout: none; 
 }
 
-/* .shadows:hover{
-    color: rgba(0, 0, 0, 0);
-} */
-
-.shadows:hover,
-.shadows.hover_effect {
+.shadows:hover{
     color: rgba(0, 0, 0, 0);
 }
 
