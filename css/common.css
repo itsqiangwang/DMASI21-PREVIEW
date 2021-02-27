@@ -29,7 +29,12 @@ body {
     transition: all 0.5s ease;
 }
 
-.shadows:hover{
+/* .shadows:hover{
+    color: rgba(0, 0, 0, 0);
+} */
+
+.shadows:hover,
+.shadows .hover_effect {
     color: rgba(0, 0, 0, 0);
 }
 
@@ -60,7 +65,7 @@ a,
     color: black;
     font-style: italic;
     border-bottom: 1px solid transparent;
-    filter: blur(1px);
+    filter: blur(1pt);
     transition: 0.3s;
 }
 
@@ -68,7 +73,7 @@ a:hover,
 .btn:hover{
     cursor: pointer;
     border-bottom: 1px solid black;
-    filter: blur(0.1px);
+    filter: blur(0.1pt);
 }
 
 h1,h2,h3,p,figure{
@@ -168,11 +173,9 @@ footer{
 
 .menu hr{
     margin: 20pt 0;
+    height: 2pt;
     color: black;
     background-color: black;
-    height: 3px;
-    outline: none;
-    border: none;
 }
 
 .menu .hr-show-on-mobile{
