@@ -58,8 +58,9 @@ a,
     color: black;
     font-style: normal;
     transition: 0.3s;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    /* text-decoration-thickness: 2px; */
     
 }
 
