@@ -16,3 +16,8 @@ Scholarships section
 #scholarships .scholarship-info{
     padding-left: 21pt;
 }
+
+.scholarship-two{
+    padding-left: 20pt;
+    text-indent: -20pt;
+}

@@ -9,9 +9,8 @@ body {
     font-family: arial, sans-serif;
     scroll-behavior: smooth;
     cursor: default;
-    /* background-color: white; */
     line-height: 1.2;
-    letter-spacing: 0.25pt;
+    letter-spacing: 0.2pt;
     animation: pageLoad 1s ease-in;
     scrollbar-width: none;
 }
@@ -27,9 +26,6 @@ body {
 
 .shadows{
     transition: all 0.5s ease;
-    user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none; 
 }
 
 .shadows:hover{
@@ -46,7 +42,7 @@ body {
 
 hr{
     margin: 0 20pt;
-    height: 1px;
+    height: 2px;
     outline: none;
     border: none;
     color: black;
@@ -54,24 +50,23 @@ hr{
 }
 
 .hr-thick{
-    height: 3px;
+    height: 4px;
 }
 
 a,
 .btn{
-    text-decoration: none;
     color: black;
-    font-style: italic;
-    border-bottom: 1px solid transparent;
-    filter: blur(1pt);
+    font-style: normal;
     transition: 0.3s;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    
 }
 
 a:hover,
 .btn:hover{
     cursor: pointer;
-    border-bottom: 1px solid black;
-    filter: blur(0.1pt);
+    font-style: italic;
 }
 
 h1,h2,h3,p,figure{
@@ -171,14 +166,14 @@ footer{
 
 .menu hr{
     margin: 20pt 0;
-    height: 2pt;
+    height: 4px;
     color: black;
     background-color: black;
 }
 
-.menu .hr-show-on-mobile{
+/* .menu .hr-show-on-mobile{
     display: none;
-}
+} */
 
 .menu .close-btn{
     position: fixed;
@@ -261,21 +256,9 @@ footer .back-to-top{
 mobile view
 */
 @media only screen and (max-width:480px) { 
-    .menu-btn{
-        font-size: 24pt !important;
-    }
-
+    .menu-btn,
     .menu .close-btn{
-        position: relative;
-        display: inline-block;
-        top: 0pt;
-        right: 0pt;
-        z-index: 1;
-        font-size: 24pt;
-    }
-
-    .menu .hr-show-on-mobile{
-        display: block;
+        font-size: 24pt !important;
     }
 
     .top-nav{
@@ -326,8 +309,7 @@ mobile view
         padding-left: 14pt !important;
     }
 
-    .menu a,
-    .menu .current-page{
+    .menu a{
         font-size: 24pt;
         display: inline-block;
         padding-left: 20pt;
@@ -335,7 +317,9 @@ mobile view
     }
 
     .menu .current-page{
+        font-size: 24pt;
         display: block;
+        width: 50%;
     }
 
     .shadows:hover{
