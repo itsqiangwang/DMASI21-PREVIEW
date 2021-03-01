@@ -93,32 +93,16 @@ header{
     padding: 20pt;
 }
 
-.landing{
-    display: flex;
-    flex-wrap: wrap;
-    height: 100vh;
-    padding: 20pt;
-    position: relative;
-}
-
-.landing>h1,
-.landing>h2{
-    width: 100%;
-    height: 50%;
-    position: relative;
-}
-
-.landing>h1>div{
-    position: absolute;
-    bottom: -5pt;
-}
-
 /*
 Page intro
 */
 
 .intro{
     padding: 20pt;
+}
+
+.intro .twenty-four-pt{
+    padding-top: 20pt;
 }
 
 /*
